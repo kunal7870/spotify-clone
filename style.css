@@ -1,0 +1,202 @@
+.home ul li {
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    align-items: center;
+}
+
+.heading img {
+    width: 14px;
+}
+
+.library {
+    min-height: 80vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: grey;
+    
+}
+
+
+
+/*right box*/
+.right {
+    margin: 15px 0; 
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(10, 10, 10);
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.header svg {
+    background-color: #000000;
+    border-radius: 3px;
+    color: rgb(90, 88, 88);
+}
+
+.buttons > *{
+    margin: 0 10px;
+}
+.signup {
+    border: none;
+    background: none;
+    color: rgb(169, 168, 168);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.signup:hover{
+    font-size: .848rem;
+    color: white;
+}
+
+.login {
+    width: 90px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(238, 241, 244);
+    padding: 5px 15px 8px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login:hover{
+    font-size: 14.6px;
+}
+
+
+.spotifyPlaylist {
+    padding: 16px;
+}
+
+.cardContainer {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    
+    max-height: 70vh;
+}
+
+.card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(25, 25, 25);
+    
+    position: relative;
+}
+
+.card>* {
+    padding-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+.play{
+
+    position:absolute;
+    top: 160px;
+    right: 17px;
+    opacity: 1; /*animation of play button*/
+    transition: all 1s ease-out;
+
+}
+
+
+
+/* playbar*/
+  
+.playbar{
+    display: flex;
+    justify-content:space-around;
+    
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    background-color: rgba(236, 236, 236, 0.741);
+    padding: 12px;
+}
+.songbuttons{
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.songList{
+    height: 500px;
+    overflow-y: auto;
+    margin: 30px 0;
+}
+.songList ul{
+    padding: 0 12px;
+}
+
+.songList ul li{
+    padding: 12px 0;
+    list-style-type:decimal ;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+.songList .info{
+font-size: 14px;
+width: 344px;
+}
+.music{
+    height: 45px;
+    width: 45px;
+}
+.playnowsvg{
+    height: 25px;
+    
+}
+
+
+.playNow{
+    display:flex ;
+    
+    align-items: center;
+}
+.playNow span{
+    font-size: 15px;
+    width: 64px;
+    
+}
