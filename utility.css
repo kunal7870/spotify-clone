@@ -8,21 +8,6 @@ body {
     color: white;
 }
 
-.border {
-    border: 2px solid red;
-    margin: 3px;
-}
-
-.left {
-    width: 25vw;
-    padding: 10px;
-
-}
-
-.right {
-    width: 75vw;
-
-}
 
 .flex {
     display: flex;
