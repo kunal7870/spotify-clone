@@ -6,42 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web-Music Player</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
 </head>
 
 <body>
     <div class="container flex bg-black">
 
         <div class="left ">
-            <div class="close invert"><img src="close.svg" alt=""></div>
+            <div class="close invert"><img src="img/close.svg" alt=""></div>
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img width="110px" class="invert" src="logo.svg" alt="spotify"></div>
+                <div class="logo"><img width="110px" class="invert" src="img/logo.svg" alt="spotify"></div>
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="home">Home</li>
-                    <li><img class="invert" src="Search.svg" alt="search">search</li>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/Search.svg" alt="search">search</li>
                 </ul>
             </div>
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading">
-                    <img class="invert" src="library.svg" alt="library">
+                    <img class="invert" src="img/library.svg" alt="library">
 
                     Your Library
                 </div>
                 <div class="songList">
 
                     <ul>
-                        <!-- <li>
-                            <img class = "invert music" src="music.svg" alt="">
-                            <div class="info">
-                                <div class="songName">Song Name</div>
-                                <div class="songArtist"> song Artist</div>
-                            </div>
-                            <div class="playNow">
-                                <span>Play Now</span>
-                                <img class="invert playnowsvg" src="play.svg" alt="">
-                            </div>
-                        </li> -->
+                        <!-- Song List here getting from js -->
                     </ul>
                 </div>
                 
@@ -63,7 +53,7 @@
                 <div class="nav">
                     <div class="hamburgerContainer">
 
-                        <img class="hamburger" src="hamburger.svg" alt="">
+                        <img class="hamburger" src="img/hamburger.svg" alt="">
                         
                         <?xml version="1.0" ?><svg class="feather feather-chevron-left" fill="none" height="24"
                         stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -86,35 +76,8 @@
             <div class="spotifyPlaylist">
                 <h1>Spotify Playlist</h1>
                 <div class="cardContainer">
-                    <div class="card">
-                        <div class="play">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" height="13.4666mm" width="13.4666mm"
-                                viewBox="0 0 847 847">
-                                <circle cx="423" cy="423" r="398" fill="#11a739" />
-                                <polygon points="642,423 467,322 292,221 292,423 292,625 467,524" fill="#000000" />
-                            </svg>
-                        </div>
-
-                        <img src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness</p>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" height="13.4666mm" width="13.4666mm"
-                                viewBox="0 0 847 847">
-                                <circle cx="423" cy="423" r="398" fill="#11a739" />
-                                <polygon points="642,423 467,322 292,221 292,423 292,625 467,524" fill="#000000" />
-                            </svg>
-                        </div>
-
-                        <img src="https://i.scdn.co/image/ab67706f00000002bf95459f4719cb4f70393377" alt="">
-                        <h2>Happy Hits</h2>
-                        <p>Hits to boost your mood and fill you with happiness</p>
-                    </div>
-
+                    
+                    <!-- cards here / from js -->
 
                 </div>
                 <div class="playbar">
@@ -129,14 +92,14 @@
                             
                         </div>
                         <div class="songbuttons">
-                            <img width="35px" id="previous" src="previous.svg" alt="prev">
-                            <img width="35px" id="play" src="play.svg" alt="play">
-                            <img width="35px" id="next" src="next.svg" alt="">
+                            <img width="35px" id="previous" src="img/previous.svg" alt="prev">
+                            <img width="35px" id="play" src="img/play.svg" alt="play">
+                            <img width="35px" id="next" src="img/next.svg" alt="">
                         </div>
                         <div class="TimeVolume">
 
                             <div class="songtime"></div>
-                            <div class="invert volume"><img width="25" src="volume.svg" alt="">
+                            <div class="invert volume"><img width="25" src="img/volume.svg" alt="">
                                 <div class="range">
                                     <input type="range" name="volume" id="">
                                 </div>
@@ -152,7 +115,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
