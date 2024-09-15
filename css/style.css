@@ -341,7 +341,7 @@ width: 344px;
         display: block;
     }
     .card{
-        width: 44vw;
+        width: 40vw;
     }
     .cardContainer{
         margin: 0;
@@ -362,9 +362,13 @@ width: 344px;
     /* .volumebar{
         display: none;
     } */
+    .cardContainer {
+        max-height: 55vh;
+    }
 }
 @media (max-width: 600px){
     .card{
-        width: 90vw;
+        width: auto;
     }
+    
 }
