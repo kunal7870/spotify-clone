@@ -204,6 +204,12 @@ async function main() {
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
         console.log("Setting volume to", e.target.value)
         currentSong.volume = parseInt(e.target.value) / 100
+
+        if(currentSong.volume == 0){
+            document.querySelector(".volume>img").src = "img/mute.svg"
+        } else {
+            document.querySelector(".volume>img").src = "img/volume.svg"
+        }
     })
 
     //add eventlistner to mute on click 

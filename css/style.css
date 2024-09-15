@@ -370,5 +370,10 @@ width: 344px;
     .card{
         width: auto;
     }
-    
+    .header>* {
+        padding: 2px;
+    }
+    .buttons>*{
+        margin: 0 6px;
+    }
 }
